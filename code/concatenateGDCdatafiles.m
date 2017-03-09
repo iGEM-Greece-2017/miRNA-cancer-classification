@@ -5,6 +5,7 @@
 % All the parameters are here. Look no further!
 params= struct(...
   'joinedDataSavefilepath','data/concatenate_miRNA/joinedData.mat',...   % Where to save the joined data
+  'joinedDataCsvpath','data/concatenate_miRNA/joinedData.csv',...
   'datapath','data/mirna-data',...                     % Folder where the data are
   'savefilepath','data/concatenate_miRNA/savedDatafileTables.mat',...    % Where to save intermediate results
   'datafilename','mirnas.quantification.txt'...        % The common datafile name 
@@ -48,5 +49,5 @@ for i= 2:ntables
 end
 
 save(params.joinedDataSavefilepath, 'joinedData');
-
-% Export as xls as well?
+% Export as csv as well
+writetable(joinedData, params.joinedDataCsvpath, 'Delimiter','\t', 'QuoteStrings',true);
