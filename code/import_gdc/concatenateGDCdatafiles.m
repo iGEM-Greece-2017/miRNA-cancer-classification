@@ -1,8 +1,9 @@
-%% Load all data
+function [primtumor_joined, norm_joined]= concatenateGDCdatafiles()
+% Load all data and concatenate them into large tables
 % If previously loaded from txt files, then a .mat file should have been saved.
 % If that .mat file exists, load that, and not the original data
 
-% All the parameters are here. Look no further!
+%% All the parameters are here. Look no further!
 params= struct(...
   'primtumor_savefilepath','data/concatenate_miRNA/primary_tumor',...   % Where to save the primary tumor data
   'primtumor_datapath','data/gdc-miRNA-primary_tumor',...               % Folder where the data are
@@ -11,7 +12,7 @@ params= struct(...
   'savefilepath','data/concatenate_miRNA/tmp_loadedtxt',...         % Where to save intermediate results
   'datafilename','mirnas.quantification.txt'...        % The common datafile name (same in every data folder)
   );
-
+%% Load from files
 if ~isempty(dir([params.savefilepath,'primtumor.mat'])) && ...
    ~isempty(dir([params.savefilepath,'norm.mat']))
   primtumor_data= load([params.savefilepath,'primtumor.mat']);

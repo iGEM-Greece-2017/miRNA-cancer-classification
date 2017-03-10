@@ -1,11 +1,21 @@
-function [primtumor, normal]= preprocessGDC()
+function [primtumor, normal]= preprocessGDC(primtumor,normal)
+% Import the GDC data if needed and preprocess them
 
-% Import GDC data
-concatenateGDCdatafiles;
-primtumor= primtumor_joined(:,2:end);
-primtumor.Properties.RowNames= primtumor_joined{:,1};
-normal= norm_joined(:,2:end);
-normal.Properties.RowNames= norm_joined{:,1};
-% Only keep raw counts
-primtumor= primtumor(:, logical(mod(1:end,2)));
-normal= normal(:, logical(mod(1:end,2)));
+%% Parameters
+params= struct(...
+  'maxcount_cutoff',5 ...   % Remove miRNAs that appear nowhere more times than this
+  );
+%% Import data if needed
+% If the data weren't given as input, import them
+if nargin==0
+  % Import GDC data
+  fprintf('[preprocessGDC]: Importing GDC data\n');
+  [primtumor, normal]= importGDCdata();
+end
+%% Preprocess
+% Remove miRNAs with too small absolute counts
+maxRNA= max(primtumor{:,1:end/2},[],2);
+primtumor= primtumor(maxRNA > params.maxcount_cutoff, :);
+maxRNA= max(normal{:,1:end/2},[],2);
+normal= normal(maxRNA > params.maxcount_cutoff, :);
+

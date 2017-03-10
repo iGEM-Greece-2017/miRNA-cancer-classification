@@ -9,7 +9,6 @@ data= cell(nfiles,1);
 for i= 1:nfiles
   data{i}= readtable([datapath,'/',names{i},'/',datafilename]);
   data{i}= data{i}(:,1:3);    % Remove "cross_mapped" column
-  %data{i}= data{i}(:,[1,2]);   % Keep ID and count only
 end
 save(savefilepath, 'data');
 end
