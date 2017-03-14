@@ -10,5 +10,5 @@ else
   fprintf('[showdistribution]: histogram\n');
 %}
   %histogram(data,'binmethod','integers');
-  histogram(data,'normalization','pdf');
+  histogram(data,'normalization','probability');
 end

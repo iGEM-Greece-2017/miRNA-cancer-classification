@@ -13,9 +13,10 @@ if nargin==0
   [primtumor, normal]= importGDCdata();
 end
 %% Preprocess
-% Remove miRNAs with too small absolute counts
-maxRNA= max(primtumor{:,1:end/2},[],2);
-primtumor= primtumor(maxRNA > params.maxcount_cutoff, :);
-maxRNA= max(normal{:,1:end/2},[],2);
-normal= normal(maxRNA > params.maxcount_cutoff, :);
+% Keep relative counts
+primtumor= primtumor(:,end/2+1:end);
+normal= normal(:,end/2+1:end);
+
+typicalNormal= defTypical(normal);
+[upreg,downreg]= makeUpDownRegulated(primtumor, typicalNormal); % Transform to {up,down}regulated
 
