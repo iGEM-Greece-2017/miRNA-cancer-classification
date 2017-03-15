@@ -16,7 +16,7 @@ end
 % Keep relative counts
 primtumor= primtumor(:,end/2+1:end); % FIX selector (use variable name)
 normal= normal(:,end/2+1:end);
-% Throw miR with 0 expression both in the normal and the cancer cases
+% Remove miR with 0 expression both in the normal and the cancer cases
 miR_zeroMask= findZeroMiR(primtumor,normal);
 primtumor= primtumor(~miR_zeroMask,:);
 normal= normal(~miR_zeroMask,:);
