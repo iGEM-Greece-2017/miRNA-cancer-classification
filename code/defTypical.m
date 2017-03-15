@@ -1,5 +1,7 @@
 function typical= defTypical(normal)
 
-m= min(normal,[],2);
-M= max(normal,[],2);
-typical= [m,M];
+%low= min(normal{:,:},[],2);
+%high= max(normal{:,:},[],2);
+low= quantile(normal{:,:},0.20,2);
+high= quantile(normal{:,:},0.80,2);
+typical= [low,high];

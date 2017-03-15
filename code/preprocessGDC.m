@@ -1,4 +1,4 @@
-function [primtumor, normal]= preprocessGDC(primtumor,normal)
+function [primtumor,normal, updownreg]= preprocessGDC(primtumor,normal)
 % Import the GDC data if needed and preprocess them
 
 %% Parameters
@@ -14,9 +14,14 @@ if nargin==0
 end
 %% Preprocess
 % Keep relative counts
-primtumor= primtumor(:,end/2+1:end);
+primtumor= primtumor(:,end/2+1:end); % FIX selector (use variable name)
 normal= normal(:,end/2+1:end);
-
+% Throw miR with 0 expression both in the normal and the cancer cases
+miR_zeroMask= findZeroMiR(primtumor,normal);
+primtumor= primtumor(~miR_zeroMask,:);
+normal= normal(~miR_zeroMask,:);
+% Regulation
 typicalNormal= defTypical(normal);
-[upreg,downreg]= makeUpDownRegulated(primtumor, typicalNormal); % Transform to {up,down}regulated
+updownreg= makeUpDownRegulated(primtumor, typicalNormal); % Transform to {up,down}regulated
+
 
