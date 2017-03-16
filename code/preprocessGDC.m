@@ -14,8 +14,8 @@ if nargin==0
 end
 %% Preprocess
 % Keep relative counts
-primtumor= primtumor(:,end/2+1:end); % FIX selector (use variable name)
-normal= normal(:,end/2+1:end);
+primtumor= primtumor(:,contains(primtumor.Properties.VariableNames, 'relcount')); % FIX selector (use variable name)
+normal= normal(:,contains(normal.Properties.VariableNames, 'relcount'));
 % Remove miR with 0 expression both in the normal and the cancer cases
 miR_zeroMask= findZeroMiR(primtumor,normal);
 primtumor= primtumor(~miR_zeroMask,:);
