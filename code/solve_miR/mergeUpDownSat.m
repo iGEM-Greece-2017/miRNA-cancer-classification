@@ -10,13 +10,13 @@ function [comboSat, comboConstituents]= mergeUpDownSat(upSat,downSat, coverageLi
 sucUp= logical(1:nmir); sucDown= logical(1:nmir);
 sucUp( all(upSat==0,2) )= 0; sucDown( all(downSat==0,2) )= 0;
 % Eliminate failed miR
-upSat_suc= upSat(sucUp)'; downSat_suc= downSat(sucDown)';
+upSat_suc= upSat(sucUp,:); downSat_suc= downSat(sucDown,:);
 % Total combos
 totalcombos= sum(sucUp)*sum(sucDown);
 
 % Make combo satisfaction mask
 comboSat= repmat(upSat_suc,sum(sucDown),1) & ...      % Many copies of upSat_suc
-  reshape(repmat(downSat_suc',sum(sucUp),1), 1,[])';  % Many copies of each row of downSat_suc
+  reshape(repmat(downSat_suc',sum(sucUp),1), ncase,[])';  % Many copies of each row of downSat_suc
 
 % Make combo constituents list (same replication method as in satisfaction mask, only for
 % the successful miR from the numbers 1 to nmir

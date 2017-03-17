@@ -13,7 +13,7 @@ function best_updown= solve_miR(primtumor,typicalNormal,regulation, params)
 
 if nargin < 4           % Default parameters
   params= struct(...
-    'totalcoverage',0.95,...
+    'totalcoverage',0.99,...
     'coverageLim',0.1,...       % Accept miR with coverage >10%
     'foldchange',10,...
     'up_countLim',[10,68],...   % x: x<normlim, x>tumlim
@@ -24,6 +24,6 @@ end
 primtumor_mat= primtumor{:,:};
 [nmir,ncase]= size(regulation);
 [upSat,downSat]= satisfyConstraints(primtumor_mat,typicalNormal,regulation,params);
-[miRcomboSat,comboConstituents]= mergeUpDownSat(upSat,downSat, params.coverageLim);
-
-%% TODO
+[miRcomboSat,comboDictionary]= mergeUpDownSat(upSat,downSat, params.coverageLim);
+selectedCombos= smallestCoveringSubset(miRcomboSat, params.totalcoverage);  % this is the algorithm
+best_updown= comboDictionary(selectedCombos,:);
