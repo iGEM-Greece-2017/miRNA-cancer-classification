@@ -1,4 +1,4 @@
-function [primtumor,normal, updownreg]= preprocessGDC(primtumor,normal)
+function [primtumor,typicalNormal, regulation]= preprocessGDC(primtumor,normal)
 % Import the GDC data if needed and preprocess them
 
 %% Parameters
@@ -22,6 +22,4 @@ primtumor= primtumor(~miR_zeroMask,:);
 normal= normal(~miR_zeroMask,:);
 % Regulation
 typicalNormal= defTypical(normal);
-updownreg= makeUpDownRegulated(primtumor, typicalNormal); % Transform to {up,down}regulated
-
-
+regulation= makeUpDownRegulated(primtumor, typicalNormal); % Transform to {up,down}regulated
