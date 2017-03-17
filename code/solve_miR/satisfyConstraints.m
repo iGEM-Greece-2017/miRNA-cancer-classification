@@ -26,8 +26,8 @@ down_premask= downregMask & down_tumCountMask & down_normCountMask;
 
 % 5: Final mask, deselect the miR (rows) that have less coverage (percentage of cases that
 %    they satisfy) than the minimum.
-ncases= size(regulation,2);
+ncase= size(regulation,2);
 upSat= up_premask; downSat= down_premask;
 % "sum(up_premask,2)" is the number of satisfied cases per miR
-upSat( sum(up_premask,2)./ncases < params.coverageLim ,:)= 0;
-downSat( sum(down_premask,2)./ncases < params.coverageLim ,:)= 0;
+upSat( sum(up_premask,2)./ncase < params.coverageLim ,:)= 0;
+downSat( sum(down_premask,2)./ncase < params.coverageLim ,:)= 0;
