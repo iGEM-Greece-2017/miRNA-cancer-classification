@@ -1,4 +1,4 @@
-function [primtumor,typicalNormal, regulation]= preprocessGDC(primtumor,normal)
+function [primtumor,normal,typicalNormal, regulation]= preprocessGDC(primtumor,normal)
 % Import the GDC data if needed and preprocess them
 
 %% Parameters
