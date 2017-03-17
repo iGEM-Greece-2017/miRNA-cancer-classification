@@ -1,10 +1,5 @@
 function miRdata= lookupSelectedCombos(miRcombos,comboCoverage, all_miRnames,regulation)
-
-%{
-miRnames= arrayfun(@(x) all_miRnames(x), miR);
-miRcov= arrayfun(@(x) sum(primtumor_mat(x,:),2), miR);
-miRfoldchange= arrayfun(@(x) exp(regulation(x,:)), miR, 'UniformOutput',false);
-%}
+% Integrate relevant information for the specified up/down-regulated miRNA combo
 
 Upregulated_miR= all_miRnames(miRcombos(:,1));
 Downregulated_miR= all_miRnames(miRcombos(:,2));

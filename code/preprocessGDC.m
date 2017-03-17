@@ -1,10 +1,6 @@
 function [primtumor,normal,typicalNormal, regulation]= preprocessGDC(primtumor,normal)
-% Import the GDC data if needed and preprocess them
+% Import the GDC data if needed and preprocess them. Input is *optional*
 
-%% Parameters
-params= struct(...
-  'maxcount_cutoff',5 ...   % Remove miRNAs that appear nowhere more times than this
-  );
 %% Import data if needed
 % If the data weren't given as input, import them
 if nargin==0
@@ -14,8 +10,16 @@ if nargin==0
 end
 %% Preprocess
 % Keep relative counts
-primtumor= primtumor(:,contains(primtumor.Properties.VariableNames, 'relcount')); % FIX selector (use variable name)
-normal= normal(:,contains(normal.Properties.VariableNames, 'relcount'));
+try
+  primtumor= primtumor(:,contains(primtumor.Properties.VariableNames, 'relcount')); % FIX selector (use variable name)
+  normal= normal(:,contains(normal.Properties.VariableNames, 'relcount'));
+catch
+  firstname= primtumor.Properties.VariableNames{1};
+  if ~contains(firstname,'relcount')
+    primtumor= primtumor(:,end/2+1:end);
+    normal= normal(:,end/2+1:end);
+  end
+end
 % Remove miR with 0 expression both in the normal and the cancer cases
 miR_zeroMask= findZeroMiR(primtumor,normal);
 primtumor= primtumor(~miR_zeroMask,:);
