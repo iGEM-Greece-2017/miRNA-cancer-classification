@@ -29,5 +29,5 @@ down_premask= downregMask & down_tumCountMask & down_normCountMask;
 ncases= size(regulation,2);
 upSat= up_premask; downSat= down_premask;
 % "sum(up_premask,2)" is the number of satisfied cases per miR
-upSat( sum(up_premask,2)./ncases < params.coverage ,:)= 0;
-downSat( sum(down_premask,2)./ncases < params.coverage ,:)= 0;
+upSat( sum(up_premask,2)./ncases < params.coverageLim ,:)= 0;
+downSat( sum(down_premask,2)./ncases < params.coverageLim ,:)= 0;
