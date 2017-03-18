@@ -1,4 +1,4 @@
-function [bestCombos,bestComboCoverage]= solve_miR(primtumor,typicalNormal,regulation, params)
+function [bestCombos,bestComboCoverage,bestComboSat]= solve_miR(primtumor,typicalNormal,regulation, params)
 % Finds a small set of highly up- and down- regulated miRNAs that covers most of the cancer
 % cases. The selected miRNAs must satisfy a number of constraints (fold change, counts etc)
 % Args:
@@ -25,4 +25,5 @@ primtumor_mat= primtumor{:,:};
 [upSat,downSat]= satisfyConstraints(primtumor_mat,typicalNormal,regulation,params);
 [miRcomboSat,comboDictionary]= mergeUpDownSat(upSat,downSat, params.coverageLim);
 [bestCombos,bestComboCoverage]= smallestCoveringSubset(miRcomboSat, params.totalcoverage);
+bestComboSat= miRcomboSat(bestCombos,:);
 bestCombos= comboDictionary(bestCombos,:);

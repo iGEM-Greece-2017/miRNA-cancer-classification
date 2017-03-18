@@ -8,6 +8,6 @@ params= struct(...
     'up_countLim',[10,68],...   % Read count lims. x: x<normlim, x>tumorlim
     'down_countLim',[68,8]...   % Read count lims. x: x>normlim, x<tumorlim
     );
-[bestCombos,bestCov]= solve_miR(primtumor,typnorm,reg, params);
+[bestCombos,bestCov,bestComboSat]= solve_miR(primtumor,typnorm,reg, params);
 miRdata= utils.lookupSelectedCombos(bestCombos,bestCov,primtumor.Properties.RowNames,reg);
 miRdata

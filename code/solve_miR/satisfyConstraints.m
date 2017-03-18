@@ -9,16 +9,16 @@ downregMask= regulation < -log(params.foldchange);
 % 2: Tumor counts
 up_tumCountMask= upregMask; down_tumCountMask= downregMask;
 % Deselect where the upregulated cells have lower tumor counts than needed
-up_tumCountMask( primtumor_mat(upregMask) < params.up_countLim(2) )= 0;
+up_tumCountMask( primtumor_mat < params.up_countLim(2) & upregMask)= 0;
 % Deselect where the downregulated cells have higher tumor counts than needed
-down_tumCountMask( primtumor_mat(downregMask) > params.down_countLim(2) )= 0;
+down_tumCountMask( primtumor_mat > params.down_countLim(2) & downregMask )= 0;
 
 % 3: Normal counts
 up_normCountMask= upregMask; down_normCountMask= downregMask;
 % Deselect the upreg miR (rows) that have higher normal counts than needed (compare with normal-low)
-up_normCountMask( typicalNormal(:,1) > params.up_countLim(1) ,:)= 0;
+up_normCountMask( typicalNormal(:,2) > params.up_countLim(1) ,:)= 0;
 % Deselect the downreg miR (rows) that have lower normal counts than needed (compare with normal-high)
-down_normCountMask( typicalNormal(:,2) < params.down_countLim(1) ,:)= 0;
+down_normCountMask( typicalNormal(:,1) < params.down_countLim(1) ,:)= 0;
 
 % 4: Pre-mask
 up_premask=   upregMask   & up_tumCountMask   & up_normCountMask;

@@ -13,4 +13,5 @@ while(achievedCoverage < totalcoverage && ~isempty(miRcomboSat))
   achievedCoverage= achievedCoverage + bestCov./ncase;    % update the coverage achieved so far
   selCombos= [selCombos; bestCombo];            % append new best combo
   selComboCoverage= [selComboCoverage; bestCov];
+  if bestCov==0, break; end;
 end
