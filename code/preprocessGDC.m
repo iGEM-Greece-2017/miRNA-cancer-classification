@@ -27,3 +27,7 @@ normal= normal(~miR_zeroMask,:);
 % Regulation
 typicalNormal= defTypical(normal);
 regulation= makeUpDownRegulated(primtumor, typicalNormal); % Transform to {up,down}regulated
+
+% Export preprocessed data to csv
+writetable(primtumor,'data/preprocessed_export/primtumor.csv');
+writetable(normal,'data/preprocessed_export/normal.csv');
