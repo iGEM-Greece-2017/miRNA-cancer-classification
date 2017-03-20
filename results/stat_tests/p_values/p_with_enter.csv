@@ -1,5 +1,6 @@
-#p values after excluding outliers and performing t test on primary and healthy cases for every miRNA (NOT ANOVA)
-#every row is a different miRNA
+#same as p_with_comma, just separated with enter instead of comma
+#p values of a t-test on every miR(normal,primary_tumor) after removing outliers  (NOT ANOVA)
+
 2.34505623725235e-05
 2.6623245208363e-05
 2.95406170203933e-05
