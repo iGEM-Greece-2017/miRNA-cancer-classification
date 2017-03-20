@@ -6,8 +6,8 @@ upsat= comboSat{1}; downsat= comboSat{2};
 Upregulated_miR= all_miRnames(upmir);
 Downregulated_miR= all_miRnames(downmir);
 
-Coverage= round(sum(upsat(upmir,:),2)./size(upsat,2)*100,3,'significant');
-Inc_Coverage= round(comboCoverage{1}./size(upsat,2)*100,3,'significant');
+Coverage= round(sum(upsat(upmir,:),2)./size(upsat,2)*100,1);
+Inc_Coverage= round(comboCoverage{1}./size(upsat,2)*100,1);
 Mean_Fold_change= arrayfun(@(mir) exp(mean(regulation(mir,upsat(mir,:)),2)), upmir);
 Mean_Tumor_Reads_per_million= arrayfun(@(mir) mean(primtumor{mir,upsat(mir,:)},2), upmir);
 Mean_Normal_Reads_per_million= mean(normal{upmir,:},2);
