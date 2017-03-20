@@ -1,7 +1,7 @@
-function showdistribution(data, reject_percentile)
+function showdistribution(data, keep_percentile)
 
 discreteness= length(data)/length(unique(data));
-data= data(data <= prctile(data,reject_percentile));
+data= data(data <= prctile(data,100-(100-keep_percentile)/2) & data >= prctile(data,(100-keep_percentile)/2));
 %{
 if discreteness > 1000
   fprintf('[showdistribution]: bar graph (discreteness=%f)\n', discreteness);

@@ -23,7 +23,7 @@ if nargin < 4           % Default parameters
 end
 
 primtumor_mat= primtumor{:,:};
-[upSat,downSat]= satisfyConstraints(primtumor_mat,typicalNormal,regulation,params);
+[upSat,downSat]= satisfyConstraints(primtumor_mat,typicalNormal,regulation,[],params);
 [miRcomboSat,comboDictionary]= mergeUpDownSat(upSat,downSat, params.coverageLim);
 [bestCombos,bestComboCoverage]= smallestCoveringSubset(miRcomboSat, params.totalcoverage);
 

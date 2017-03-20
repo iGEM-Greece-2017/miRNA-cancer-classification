@@ -1,6 +1,14 @@
-function [upSat,downSat]= satisfyConstraints(primtumor_mat,typicalNormal,regulation,params)
+function [upSat,downSat]= satisfyConstraints(primtumor_mat,typicalNormal,regulation, ...
+  pvals,params)
 % Make the constraint satisfaction masks, where each cell is 1 if all the constraints are
 % satisfied for this miR and case
+
+% 0: Significance mask
+if isempty(pvals)
+  significanceMask= ones(size(regulation));
+else
+  significanceMask= repmat(pvals < params.significanceLim, 1,size(regulation,2));
+end
 
 % 1: Fold change mask (must be first, because the other operations are different for up/down-regulated
 upregMask= regulation > log(params.foldchange);
@@ -21,8 +29,8 @@ up_normCountMask( typicalNormal(:,2) > params.up_countLim(1) ,:)= 0;
 down_normCountMask( typicalNormal(:,1) < params.down_countLim(1) ,:)= 0;
 
 % 4: Pre-mask
-up_premask=   upregMask   & up_tumCountMask   & up_normCountMask;
-down_premask= downregMask & down_tumCountMask & down_normCountMask;
+up_premask=   significanceMask & upregMask   & up_tumCountMask   & up_normCountMask;
+down_premask= significanceMask & downregMask & down_tumCountMask & down_normCountMask;
 
 % 5: Final mask, deselect the miR (rows) that have less coverage (percentage of cases that
 %    they satisfy) than the minimum.
