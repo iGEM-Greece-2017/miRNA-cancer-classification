@@ -9,9 +9,10 @@ selCombos= []; selComboCoverage= [];
 while(achievedCoverage < totalcoverage && ~isempty(miRcomboSat))
   comboCoverage= sum(miRcomboSat,2);        % coverage for each miR combo
   [bestCov,bestCombo]= max(comboCoverage);  % greedily select the combo with the highest coverage
+  if bestCov==0, break; end;
+  
   miRcomboSat= miRcomboSat(:, ~miRcomboSat(bestCombo,:)); % remove satisfied cases
   achievedCoverage= achievedCoverage + bestCov./ncase;    % update the coverage achieved so far
   selCombos= [selCombos; bestCombo];            % append new best combo
   selComboCoverage= [selComboCoverage; bestCov];
-  if bestCov==0, break; end;
 end

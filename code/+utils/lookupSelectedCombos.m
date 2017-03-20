@@ -4,7 +4,7 @@ function miRdata= lookupSelectedCombos(miRcombos,comboCoverage, all_miRnames,reg
 Upregulated_miR= all_miRnames(miRcombos(:,1));
 Downregulated_miR= all_miRnames(miRcombos(:,2));
 Coverage= comboCoverage;
-Fold_change_Up= exp(regulation(miRcombos(:,1)));
-Fold_change_Down= exp(regulation(miRcombos(:,2)));
+Mean_Fold_change_Up= exp(mean(regulation(miRcombos(:,1),:),2));
+Mean_Fold_change_Down= 1./exp(mean(regulation(miRcombos(:,2),:),2));
 
-miRdata= table(Upregulated_miR,Downregulated_miR,Coverage,Fold_change_Up,Fold_change_Down);
+miRdata= table(Upregulated_miR,Downregulated_miR,Coverage,Mean_Fold_change_Up,Mean_Fold_change_Down);
