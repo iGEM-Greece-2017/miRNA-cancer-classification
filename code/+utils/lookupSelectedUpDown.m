@@ -1,4 +1,5 @@
-function [updata,downdata]= lookupSelectedUpDown(updownmir,comboCoverage,comboSat, pvals,all_miRnames,primtumor,normal,regulation)
+function [updata,downdata]= lookupSelectedUpDown(updownmir,comboCoverage,comboSat, ...
+  pvals,all_miRnames,primtumor,normal,regulation)
 % Integrate relevant information for the specified up/down-regulated miRNA combo
 
 upmir= updownmir{1}; downmir= updownmir{2};
