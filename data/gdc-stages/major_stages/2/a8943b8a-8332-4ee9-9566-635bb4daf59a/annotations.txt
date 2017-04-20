@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+281388ad-9593-583f-80d6-23ce21e4e96b	11682	case	401a37f3-6630-4400-a811-a262351e37de	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy skin cancer. No systemic chemotherapy or radiation.

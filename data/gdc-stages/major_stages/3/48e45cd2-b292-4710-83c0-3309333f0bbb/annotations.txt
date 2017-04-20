@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+34886c95-d117-5989-a101-363281588f26	11688	case	ac6a3df9-41b1-4e5a-a15e-f44481384c23	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy  breast cancer treated with system chemotherapy, hormone therapy, and radiation.
+c49019bf-0206-531d-811e-d066bb74bc03	12001	case	ac6a3df9-41b1-4e5a-a15e-f44481384c23	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy  breast cancer treated with system chemotherapy, hormone therapy, and radiation.

@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+4ea47895-f783-5a75-9f3c-79d381ef759e	11870	case	93690a96-421c-4c59-85ba-fa6dd538c721	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy SCC of the back. No systemic chemotherapy or radiation.

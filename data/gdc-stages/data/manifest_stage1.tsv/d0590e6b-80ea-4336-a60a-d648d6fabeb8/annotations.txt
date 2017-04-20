@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+81d62f2a-0164-5815-9c0c-a4ceb861d43a	12005	case	c113808a-773f-4179-82d6-9083518404b5	Synchronous malignancy	Notification	2012-11-10T00:00:00	Approved	Pt with synchronous malignancy of the splenic flexure

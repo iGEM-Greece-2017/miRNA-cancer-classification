@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+c4caf894-ac83-5e8f-961f-98585737a49f	11776	case	fd16b634-2e04-44a3-862d-fb03cd73c057	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy  treated w/ systemic  chemotherapy.
+e95e823f-3903-529f-87b6-b50e4034ff77	11993	case	fd16b634-2e04-44a3-862d-fb03cd73c057	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy  treated w/ systemic  chemotherapy.

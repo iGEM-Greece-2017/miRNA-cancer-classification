@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+8e3ec53f-c301-5882-a3db-794f76e90269	1082	case	28033279-cc74-4775-afdf-2497f6ddb55c	Prior malignancy	Notification	2010-12-19T00:00:00	Approved	[intgen.org]: Prior Malignancy
+f4266f77-b0ab-5a5c-a61c-22473ce8a4c5	11985	case	28033279-cc74-4775-afdf-2497f6ddb55c	History of acceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy prostate cancer treated with radiation.

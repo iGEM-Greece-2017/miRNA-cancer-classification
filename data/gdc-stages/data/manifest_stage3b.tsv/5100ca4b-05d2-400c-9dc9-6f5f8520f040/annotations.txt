@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+5c31f89b-1d36-59e1-966f-877aad798c39	12111	case	14c13b05-abfe-472e-83a9-b28f60e58ad8	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy lymphoma treated with systemic chemotherapy.
+fb627058-e646-57d2-8fc8-7fa284ec63e6	11866	case	14c13b05-abfe-472e-83a9-b28f60e58ad8	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy lymphoma treated with systemic chemotherapy.

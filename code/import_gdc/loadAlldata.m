@@ -3,7 +3,14 @@ function data= loadAlldata(datapath, datafilename, savefilepath)
 
 names= dir(datapath);
 names= arrayfun(@(x) x.name, names(3:end), 'UniformOutput',false);  % Keep dir names
+for i= 1:length(names)  % Remove "info" file
+  if strcmp(names{i},'info')
+    if i<length(names), names= [names(1:i-1);names(i+1:end)];
+    else, names= names(1:end-1); end
+  end
+end
 nfiles= length(names);
+
 data= cell(nfiles,1);
 % For each file, load data
 for i= 1:nfiles

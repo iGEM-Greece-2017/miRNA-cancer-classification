@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+5692aa11-fbe7-5ab6-a180-fdbdba148772	11984	case	d976782c-90c1-421d-b83c-7fc2617e2709	Synchronous malignancy	Notification	2012-11-10T00:00:00	Approved	Synchronous malignancy L KIRC treated with locoregional radiation

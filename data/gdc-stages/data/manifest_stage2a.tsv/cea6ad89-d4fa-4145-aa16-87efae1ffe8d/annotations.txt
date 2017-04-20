@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+5f7ed370-201b-5d0a-87a1-6f3e3cc9da04	801	case	381cf7f3-cd7b-4660-8175-ff8062f7bf78	Prior malignancy	Notification	2010-10-28T00:00:00	Approved	No Note Specified
+b104455c-0a47-5028-a455-1297c1cbc6b7	15321	case	381cf7f3-cd7b-4660-8175-ff8062f7bf78	Prior malignancy	Notification	2013-02-22T00:00:00	Approved	Patient had a prior prostate cancer. No radiation or systemic chemotherapy.

@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+8090ac9b-a6a6-56de-a6ad-e27a7eb97e65	11768	case	39b6ae01-c97b-4234-8a28-208fdf170432	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy basal cell carcinoma. No systemic chemotherapy or radiation.

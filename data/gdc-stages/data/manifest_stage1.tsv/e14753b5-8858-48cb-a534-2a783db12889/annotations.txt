@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+da666fe8-1e9f-5664-a148-244d95202150	1048	case	315ef7f6-ca21-4d87-8f19-40bd455885ec	Item in special subset	Notification	2010-12-08T00:00:00	Approved	Case came in as Colon.  BCR was notified that case was Rectal.  Program Office determined this will be a Notification vs. a Redaction and no changes to sample type, etc.

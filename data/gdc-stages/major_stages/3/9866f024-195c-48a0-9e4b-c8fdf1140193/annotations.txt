@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+de26d4a9-557e-5bb3-be76-b7b9d1866052	26866	case	d7ebd11a-1339-4b28-be90-a788d2cfa706	Item may not meet study protocol	Observation	2015-02-26T00:00:00	Approved	This case was accepted into TCGA but the pathology report is not consistent with study specific metrics. The BCR will ICD code per the pathology report, which may not match the clinical data.

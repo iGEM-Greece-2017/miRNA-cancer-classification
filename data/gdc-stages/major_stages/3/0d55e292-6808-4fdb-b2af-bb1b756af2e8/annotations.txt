@@ -1,0 +1,4 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+67413664-fe67-565b-902b-bf432bc6b1b0	11994	case	127f738d-afa1-42f6-a9a0-f33806667b84	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy  breast cancer treated with unknown hormone therapy. Pt with  synchronous colon cancer.
+a57ed6ce-ccb1-534c-a0b5-d4e032a18294	11683	case	127f738d-afa1-42f6-a9a0-f33806667b84	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy  breast cancer treated with unknown hormone therapy. Pt with  synchronous colon cancer.
+f081fc1f-8a16-5f74-8fd8-8106ca845e46	11995	case	127f738d-afa1-42f6-a9a0-f33806667b84	Synchronous malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy  breast cancer treated with unknown hormone therapy. Pt with  synchronous colon cancer.

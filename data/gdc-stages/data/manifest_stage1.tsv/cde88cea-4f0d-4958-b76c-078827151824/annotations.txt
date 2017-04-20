@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+af676391-7491-51e1-9ed9-e92b21ab642b	11871	case	2c0a725a-e829-4d84-89d9-d0d47f6cfa37	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy of the L colon. No systemic chemotherapy or radiation.

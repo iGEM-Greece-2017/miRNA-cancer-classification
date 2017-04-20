@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+c63087bb-84c6-535b-abf6-e90243476849	11998	case	2c9996bb-af6e-4424-881a-e81b9c9aeb78	Synchronous malignancy	Notification	2012-11-10T00:00:00	Approved	Synchronous malignancy of the colon

@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+93b98239-2899-5d21-9a17-723a7b4f55b2	15322	case	99c532b0-6b42-4925-a344-fc7262c415ee	History of acceptable prior treatment related to a prior/other malignancy	Notification	2013-02-22T00:00:00	Approved	Patient had a prior cancer of the parotid gland treated with locoregional radiation. No systemic chemotherapy.

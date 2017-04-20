@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+4823d3d2-9ac0-5723-b18a-a67756daf85d	11703	case	5eed7e8a-c219-4497-a99f-bfc48faca4d8	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy melanoma. No systemic chemotherapy or radiation. Prior malignancy R breast treated with chemotherapy.
+a54dd2ef-2a46-5dd3-b160-763950988913	12114	case	5eed7e8a-c219-4497-a99f-bfc48faca4d8	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy R breast treated with chemotherapy.

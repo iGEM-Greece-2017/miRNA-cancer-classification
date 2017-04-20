@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+46e514b5-4560-57f3-9704-d3508660e1be	11680	case	b107565b-7558-4745-952b-689178367e1c	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy colon cancer. No systemic chemotherapy or radiation.
+61695876-b91a-5140-afd7-082d937ce5e8	20720	case	b107565b-7558-4745-952b-689178367e1c	Case submitted is found to be a recurrence after submission	Notification	2014-06-16T00:00:00	Approved	patient had a prior colon malignancy

@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+e2d02240-d2e8-54da-878d-4b3e703b9623	11992	case	ba49b428-246d-46d2-b549-39a5fc8f7003	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy  breast cancer treated w/ hormone therapy (mistletoe) and radiation.
+e528c1c9-30d2-5a29-974f-be232d9971d1	11775	case	ba49b428-246d-46d2-b549-39a5fc8f7003	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy  breast cancer treated w/ hormone therapy (mistletoe) and radiation.

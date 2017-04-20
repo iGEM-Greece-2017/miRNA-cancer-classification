@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+c05fa94f-6f4e-5ecc-b6f9-45f12a7edde7	11782	case	beb63625-d9bf-4ccd-bc53-635b53d24240	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy  breast cancer treated w/ radiation
+ff428889-5197-5faa-ab8b-9578f7b11b62	12002	case	beb63625-d9bf-4ccd-bc53-635b53d24240	History of acceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy  breast cancer treated w/ radiation

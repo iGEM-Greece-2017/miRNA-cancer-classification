@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+06a820c0-93b0-5323-bf71-2ef738776575	11777	case	2d02bd7a-5beb-4e43-9ccb-18d89c9d5ca2	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy stomach cancer.  No systemic chemotherapy or radiation.

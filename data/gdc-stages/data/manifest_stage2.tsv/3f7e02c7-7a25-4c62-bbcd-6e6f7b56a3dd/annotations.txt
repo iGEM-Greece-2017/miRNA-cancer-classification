@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+2a3bd5be-4fb0-5c2d-8e5e-6c142a0945c1	803	case	d4e1472a-7b5f-46f4-acb7-b961f634e28e	Prior malignancy	Notification	2010-10-28T00:00:00	Approved	Patient had a prior malignancy of the bronchus and lung lower lobe. No radiation or systemic chemotherapy.
+bb979fd8-e758-574c-8ed4-76cdafd5eb60	803	case	d4e1472a-7b5f-46f4-acb7-b961f634e28e	Prior malignancy	Notification	2010-10-28T00:00:00	Approved	No Note Specified

@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+7ba74fd4-4a51-5523-864b-e8c74e19b8ac	12016	case	6fbc2b46-6762-4778-aa7e-782162c5397c	Synchronous malignancy	Notification	2012-11-10T00:00:00	Approved	Pt with synchronous malignancy of the rectum.

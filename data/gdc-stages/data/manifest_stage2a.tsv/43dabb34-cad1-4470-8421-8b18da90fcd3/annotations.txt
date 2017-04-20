@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+371ee25e-db52-57ef-a89c-9fb327a192e4	11686	case	f38d49b7-6cad-4460-abd0-3685a3b2d941	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy breast cancer. No systemic chemotherapy or radiation.
+8163242a-f832-5cfc-a809-2de765fdfa7a	26865	case	f38d49b7-6cad-4460-abd0-3685a3b2d941	Item may not meet study protocol	Observation	2015-02-26T00:00:00	Approved	This case was accepted into TCGA but the pathology report is not consistent with study specific metrics. The BCR will ICD code per the pathology report, which may not match the clinical data.

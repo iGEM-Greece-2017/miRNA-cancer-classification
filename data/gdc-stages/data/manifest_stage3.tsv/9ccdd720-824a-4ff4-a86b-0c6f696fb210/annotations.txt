@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+9670afde-7fbf-55c0-842c-dac82fe0b4e8	11868	case	e7dbfca1-9657-4952-8e0d-dec6373dda5b	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy thyroid cancer treated with radioactive iodine
+ac68e8a2-1634-56f0-bef7-4a3e461f7dd2	12113	case	e7dbfca1-9657-4952-8e0d-dec6373dda5b	History of acceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy thyroid cancer treated with radioactive iodine

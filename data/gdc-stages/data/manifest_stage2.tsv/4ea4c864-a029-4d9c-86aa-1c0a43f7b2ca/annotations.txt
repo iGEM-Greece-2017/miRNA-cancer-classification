@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+e5dd3767-d22f-5056-b456-c616900b8af6	11684	case	41658cf8-0de1-4a97-bb60-0f0107c84e00	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Unknown prior malignancy.

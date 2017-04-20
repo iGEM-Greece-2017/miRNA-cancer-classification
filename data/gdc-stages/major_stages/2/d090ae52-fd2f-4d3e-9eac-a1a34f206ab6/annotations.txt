@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+1f49d818-94ed-5ba5-b60a-9517ff49ede6	26867	case	e394e9ec-7288-4ede-9ef8-41b631d100dd	Item may not meet study protocol	Observation	2015-02-26T00:00:00	Approved	This case was accepted into TCGA but the pathology report is not consistent with study specific metrics. The BCR will ICD code per the pathology report, which may not match the clinical data.
+26727dc6-3aa0-5ee7-827a-f9160879440e	11685	case	e394e9ec-7288-4ede-9ef8-41b631d100dd	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy kidney and bladder cancers. No systemic chemotherapy or radiation.

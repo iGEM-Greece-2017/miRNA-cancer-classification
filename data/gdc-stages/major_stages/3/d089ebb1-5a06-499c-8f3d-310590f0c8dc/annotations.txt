@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+1cfca884-83d9-5c7b-b0e1-8daa2b6ce0a5	12006	case	13eff2e5-e33a-485f-9ba4-8a7ccb3c7528	Synchronous malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy prostate cancer. No systemic chemotherapy or radiation. Patient with synchronous malignancy of the cecum.
+47dcbdff-cd82-5acc-9061-53cbfe6166e1	11784	case	13eff2e5-e33a-485f-9ba4-8a7ccb3c7528	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy prostate cancer. No systemic chemotherapy or radiation. Patient with synchronous malignancy of the cecum.

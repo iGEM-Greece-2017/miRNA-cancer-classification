@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+2e1c5571-f197-5b23-b2f6-3c291d5379d7	11772	case	1ad0b9b9-7ded-4281-b114-9dcc6138c037	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy  testicular cancer treated w/ radiation
+76c644c6-fcc4-51f1-8711-4936d314c46c	11989	case	1ad0b9b9-7ded-4281-b114-9dcc6138c037	History of acceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy  testicular cancer treated w/ radiation

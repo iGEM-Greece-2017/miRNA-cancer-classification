@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+41dff9e2-cf8b-56f0-82ad-e7ab17b42c7c	11792	case	f1e6ce83-b4a0-4643-8e8e-a1ef8a158a27	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy Hodgkins lymphoma treated with chemotherapy and radiation.
+4de538e4-1ef6-5292-adff-31b134150133	12018	case	f1e6ce83-b4a0-4643-8e8e-a1ef8a158a27	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy Hodgkins lymphoma treated with chemotherapy and radiation.

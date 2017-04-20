@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+01a664d8-0c6f-5d5b-b19f-c5b5636ded5e	11997	case	c46971a1-cbac-425d-bac2-f4142c92522e	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy breast cancer treated with unknown hormone therapy.
+8ad794c0-7072-55c4-bc1b-08f7fdb7271d	11779	case	c46971a1-cbac-425d-bac2-f4142c92522e	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy breast cancer treated with unknown hormone therapy.

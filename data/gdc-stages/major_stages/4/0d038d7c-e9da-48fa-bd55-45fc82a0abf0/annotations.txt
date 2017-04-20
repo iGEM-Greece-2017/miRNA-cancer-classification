@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+c3fd008f-5f41-5e2f-9f59-6476f5c1376e	11781	case	57a2044d-20cc-4d02-b268-ce570a0fabe3	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy of the retroperitoneum and peritoneum and sigmoid colon. No systemic chemotherapy or radiation.

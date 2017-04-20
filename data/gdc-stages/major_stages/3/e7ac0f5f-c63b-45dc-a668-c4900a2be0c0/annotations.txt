@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+46cf748d-bd58-5c6e-bd52-a46a1d63d6eb	11986	case	d9d7f0d4-fa64-48f2-8037-52cbf0b34ad8	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy skin cancer. No systemic chemotherapy or radiation. Prior malignancy rectal cancer treated w/ systemic chemotherapy.
+9a5d0f15-e106-57df-9896-a44cb84684e0	11769	case	d9d7f0d4-fa64-48f2-8037-52cbf0b34ad8	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy skin cancer. No systemic chemotherapy or radiation. Prior malignancy rectal cancer treated w/ systemic chemotherapy.

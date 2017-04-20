@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+b8a36b26-39e5-5196-9597-12e73212a2b3	11767	case	95d4f0c4-5997-4ffb-b876-0ddfeee972bb	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy skin cancer L eyelid. No systemic chemotherapy or radiation.
