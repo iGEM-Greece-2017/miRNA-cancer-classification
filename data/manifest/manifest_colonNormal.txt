@@ -1,0 +1,9 @@
+id	filename	md5	size	state
+6f22f748-3bde-46c7-8e05-ea31741c0e67	62141c39-1c72-4ef0-b9a0-5828b84febf2.mirbase21.mirnas.quantification.txt	7d362a8038b739b3b7a90e89c52fda01	50087	live
+94fb5514-61f8-4c1d-a052-43751ece61f7	6b220dfb-7976-43ae-8444-5501ac06e8cc.mirbase21.mirnas.quantification.txt	c88904aaa833c443949bc6b8f917a97e	50123	live
+e195276b-923f-4f7a-9281-34e8ea4d144d	d67c7659-90ab-41e5-b037-921c6e2f4547.mirbase21.mirnas.quantification.txt	d4da4102823abfafd4713d86ba014a6a	50162	live
+43237468-e2ba-42ce-9775-976dc1b9cfca	174b859d-d5af-45e9-9964-d2f70c99e331.mirbase21.mirnas.quantification.txt	0871e47f5b427e01636cf4c5c82f8124	50102	live
+44513984-654c-43d5-8954-d82dfe1b72cc	f4b7b376-7f7b-41b8-a462-ee68a0d14d69.mirbase21.mirnas.quantification.txt	2f3d3801764797a1d1d73941ac04574b	50035	live
+d3480c9f-14ef-4eee-9794-15581d0593f7	b7cdd03b-c11d-47ed-9dfa-b819a14389db.mirbase21.mirnas.quantification.txt	ba873894260822c3a3cae62602bc47ab	50138	live
+9e19f90b-fb4d-4536-b6b4-0d8f0ecdcd45	6b6c9035-b38d-419c-b759-3e9a1d36e88d.mirbase21.mirnas.quantification.txt	91d61a909e7deaf1c76472283e8f3f07	50121	live
+c2007c45-e961-4980-894a-73d57daa62ec	f16434b2-e568-497e-a1a7-f6c4e4c96f20.mirbase21.mirnas.quantification.txt	d4a719dc29f739aacdfc36e1d30a5360	50031	live
